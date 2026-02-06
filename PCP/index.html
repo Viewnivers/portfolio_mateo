@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="page">
+
+        <header>
+            <div class="logo">
+                <a href="/">MV.</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#portfolio">Projet récent</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="about">
+                <h1>
+                    Bonjour, Je suis Matéo.
+                </h1>
+                <p>
+                    étudiant en BTS SIO (Services Informatiques aux Organisations) option SISR (Solutions d’Infrastructure, Systèmes et Réseaux) voici mon portfolio
+                    avec mes compétences et projets. 
+                </p>
+            </div>
+
+            <section id="skills">
+                <h2>Compétences</h2>
+                <div class="skill card">
+                    <h3>
+                        Réseaux & Infrastructure
+                    </h3>
+                    <p>
+                        &bull; Configuration de switchs et routeurs Cisco/Netgear/Huawei (notions CLI)
+                        <br>
+                        &bull; Connaissances en VLAN, routage statique, et accès SSH
+                        <br>
+                        &bull; Utilisation de Wireshark pour l’analyse de trafic réseau
+                    </p>
+                </div>
+
+                <div class="skill card">
+                    <h3>
+                        Développement PowerShell & Automatisation
+                    </h3>
+                    <p>
+                        &bull; Connaissances de base en Powershell et XAML
+                        <br>
+                        &bull; Scripts d’automatisation pour la configuration réseau
+                        <br>
+                        &bull; Interfaces graphiques avec XAML et PowerShell
+                    </p>
+                </div>
+
+                <div class="skill card">
+                    <h3>
+                        Bases de développement Web
+                    </h3>
+                    <p>
+                        &bull; Connaissances en HTML, CSS et JavaScript
+                        <br>
+                        &bull; Notions de React et Node.js (niveau débutant)
+                        <br>
+                        &bull; Capacité à lire et adapter du code existant
+                    </p>
+                </div>
+
+                <div class="skill card">
+                    <h3>
+                        Cybersécurité
+                    </h3>
+                    <p>
+                        &bull; Analyse de trafic réseau (Forensics)
+                        <br>
+                        &bull; Durcissement système (Hardening)
+                        <br>
+                        &bull; Cryptographie de base et Accès Distants
+                    </p>
+            </section>
+
+            <section id="portfolio">
+                <h2>Projet récent</h2>
+                <div id="projectCarousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                            <div class="card" style="width: 25rem;">
+                                <img src="https://petri.com/wp-content/uploads/2022/02/PowerShell-Hero-Approved.png" class="card-img-top" alt="Projet 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 1</h5>
+                                    <p class="card-text">Ce Projet à pour but de faire une interface graphique qui s'ouvre en fenêtre et qui sert a configurer un switch (Cisco) pour les personne qui n'ont
+                            pas forcement les connaissances pour le faire en CLI (le projet est en PowerShell et XMAL).</p>
+                                    <a href="https://siovhblyceebasch-my.sharepoint.com/:w:/g/personal/mateo_vidal_lycee-basch_fr/EXge6ZmtAi1Mgd9fPH6JbxkBeo-4w-_ioo4cnHd9Zicj3g?e=AfvvS5" class="btn btn-primary">
+                                        Lien vers la Doc</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                            <div class="card" style="width: 25rem;">
+                                <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/276936322/original/459a3f0d4f500b7553649f696843b128f85f9098/setup-and-configure-pfsense-firewall.png" class="card-img-top" alt="Projet 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project 2</h5>
+                                    <p class="card-text">Pour ce projet le but était de permettre une connexion à distance dans une maison de quartier qui était isolée du réseau de la mairie de Fougères et d'accéder à un interphone Castel.</p>
+                                    <a href="https://siovhblyceebasch-my.sharepoint.com/:b:/g/personal/mateo_vidal_lycee-basch_fr/IQBeME7T5maQTayiVkOgAFAWARqPnlP6V0W7hHQiJJN6pyc?e=I91E0C" class="btn btn-primary">Lien vers la Doc</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </button>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    Si cela vous a donner envie de me contacter voici mon mail 
+                    <br>
+                    <a href="mailto:mateo.vidal1708@gmail.com"> mateo.vidal1708@gmail.com</a>.
+                </p>
+            </section>
+
+
+        </main>
+
+        <footer>
+            
+        </footer>
+    </div>
+    <script>
+        // Catch all the # links from the nav and make them scroll smoothly to their destinations
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        // loop through the links and set an onclick event to send the user to the correct section in a smooth scroll
+        navLinks.forEach((link) => {
+            link.onclick = (e) => {
+                e.preventDefault();
+                const target = document.querySelector(e.target.getAttribute("href"));
+                target.scrollIntoView({
+                    behavior: "smooth",
+                });
+                return false;
+            };
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
